@@ -40,7 +40,7 @@ void* threadFunc(void* param)
                          min_thread = temp;
                  //printf("%f ", temp);                                    
      }
-     printf("In thread file_no = %s  MIN=%f MAX=%f \n", t_info->file_name, min_thread, max_thread);
+     //printf("In thread file_no = %s  MIN=%f MAX=%f \n", t_info->file_name, min_thread, max_thread);
      t_info->sum = min_thread + max_thread;
      t_info->dif = min_thread - max_thread;
      fclose(file_ptr);                  
@@ -48,7 +48,7 @@ void* threadFunc(void* param)
  
 //access command line arguments with argc and argv in main()
 int main(int argc, char* argv[])
-{   //printf("argc = %d \n", argc);
+{   printf("argc = %d \n", argc);
 
     float sum, dif, min, max, min_final, max_final;
     max_final = FLT_MIN;
