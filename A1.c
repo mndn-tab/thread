@@ -40,7 +40,7 @@ void* threadFunc(void* param)
                          min_thread = temp;
                  //printf("%f ", temp);                                    
      }
-     //printf("In thread file_no = %s  MIN=%f MAX=%f \n", t_info->file_name, min_thread, max_thread);
+     printf("In thread file_no = %s  MIN=%f MAX=%f \n", t_info->file_name, min_thread, max_thread);
      t_info->sum = min_thread + max_thread;
      t_info->dif = min_thread - max_thread;
      fclose(file_ptr);                  
